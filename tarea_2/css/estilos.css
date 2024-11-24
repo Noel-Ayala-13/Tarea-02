@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #ff5722;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    font-size: 24px;
+}
+
+.custom-header {
+    background-color: #FFDAB9;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.custom-header .navbar-nav .nav-link:hover {
+    color: #FF6347;
+}
+
+.custom-header .btn-primary {
+    background-color: #FF6347;
+    border-color: #FF6347;
+}
+
+.custom-header .btn-primary:hover {
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+
+@media (max-width: 992px) {
+    .custom-header .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-header .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+
+.position-relative {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#helado_nosotros {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#helado_nosotros:hover {
+    transform: scale(1.1);
+    transform-origin: center center; 
+}
+
+.nosotros {
+    background-color: #f8f8f8;
+}
+
+.nosotros h2 {
+    color: #FF5722;
+    font-size: 2rem;
+}
+
+.nosotros h3 {
+    color: #FF6347;
+    font-size: 1.5rem;
+}
+
+.nosotros p {
+    color: #555;
+}
+
+.nosotros .img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nosotros .row {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .nosotros h2 {
+        font-size: 1.5rem;
+    }
+
+    .nosotros h3 {
+        font-size: 1.25rem;
+    }
+
+    .nosotros p {
+        font-size: 0.875rem;
+    }
+
+    .nosotros .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+.productos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.productos .producto-lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 200px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.info-contacto {
+    background-color: #eeeeee;
+    padding: 40px 20px;
+}
+
+.info-contacto form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-contacto input, .info-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bg-light .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-light .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bg-light .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.25rem;
+}
+
+
+.bg-light .card .h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.bg-light .card-body {
+    padding: 12px;
+}
+
+.tiendas .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tiendas .card:hover {
+    transform: scale(1.05);
+}
+
+.tiendas .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tiendas .btn-primary {
+    background-color: #FF5722;
+    border-color: #FF5722;
+}
+
+.tiendas .btn-primary:hover {
+    background-color: #FF6347;
+    border-color: #FF6347;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
